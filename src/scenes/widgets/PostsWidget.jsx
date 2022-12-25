@@ -10,7 +10,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
 
   const getPosts = async () => {
     const response = await fetch(
-      'https://socialize-backend.onrender.com/posts',
+      'https://sociolize-backend.onrender.com/posts',
       {
         method: 'GET',
         headers: { Authorization: `Bearer ${token}` },
@@ -22,7 +22,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
 
   const getUserPosts = async () => {
     const response = await fetch(
-      `https://socialize-backend.onrender.com/posts/${userId}/posts`,
+      `https://sociolize-backend.onrender.com/posts/${userId}/posts`,
       {
         method: 'GET',
         headers: { Authorization: `Bearer ${token}` },

@@ -13,7 +13,7 @@ const FriendListWidget = ({ userId }) => {
 
   const getFriends = async () => {
     const response = await fetch(
-      `https://socialize-backend.onrender.com/users/${userId}/friends`,
+      `https://sociolize-backend.onrender.com/users/${userId}/friends`,
       {
         method: 'GET',
         headers: { Authorization: `Bearer ${token}` },

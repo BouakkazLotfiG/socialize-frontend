@@ -8,7 +8,7 @@ const UserImage = ({ image, size = '60px' }) => {
         width={size}
         height={size}
         alt='user'
-        src={`https://socialize-backend.onrender.com/assets/${image}`}
+        src={`https://sociolize-backend.onrender.com/assets/${image}`}
       />
     </Box>
   );

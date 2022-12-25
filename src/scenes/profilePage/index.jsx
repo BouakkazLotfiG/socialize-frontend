@@ -16,7 +16,7 @@ const ProfilePage = () => {
 
   const getUser = async () => {
     const response = await fetch(
-      `https://socialize-backend.onrender.com/users/${userId}`,
+      `https://sociolize-backend.onrender.com/users/${userId}`,
       {
         method: 'GET',
         headers: { Authorization: `Bearer ${token}` },

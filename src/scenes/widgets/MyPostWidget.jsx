@@ -47,7 +47,7 @@ const MyPostWidget = ({ picturePath }) => {
     }
 
     const response = await fetch(
-      `https://socialize-backend.onrender.com/posts`,
+      `https://sociolize-backend.onrender.com/posts`,
       {
         method: 'POST',
         headers: { Authorization: `Bearer ${token}` },
