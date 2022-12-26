@@ -79,14 +79,11 @@ const Form = () => {
   };
 
   const login = async (values, onSubmitProps) => {
-    const loggedInResponse = await fetch(
-      'https://sociolize-backend.onrender.com/auth/login',
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(values),
-      }
-    );
+    const loggedInResponse = await fetch('https://sociolize-backend.onrender.com/auth/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(values),
+    });
     const loggedIn = await loggedInResponse.json();
     onSubmitProps.resetForm();
     if (loggedIn) {
@@ -96,6 +93,7 @@ const Form = () => {
           token: loggedIn.token,
         })
       );
+      console.log(loggedIn.token);
       navigate('/home');
     }
   };
